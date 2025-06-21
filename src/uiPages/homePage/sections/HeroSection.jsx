@@ -1,5 +1,90 @@
+"use client";
 import React from "react";
+import Typewriter from "typewriter-effect";
+import Image from "next/image";
+import { cn } from "@/lib/utils";
+import { GridPattern } from "@/components/magicui/grid-pattern";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { SocialMedia } from "../components/SocialMedia";
+import { BriefcaseBusiness } from "lucide-react";
 
 export function HeroSection() {
-  return <div>HeroSection</div>;
+  return (
+    <section className="relative bg-background overflow-hidden">
+      {/* Grid background pattern */}
+      <div className="absolute inset-0 z-0">
+        <GridPattern
+          width={50}
+          height={50}
+          x={-1}
+          y={-1}
+          strokeDasharray={"5 2"}
+          className={cn(
+            "h-full w-full",
+            "[mask-image:radial-gradient(200px_circle_at_center,black,transparent)] md:[mask-image:radial-gradient(600px_circle_at_center,white,transparent)]"
+          )}
+        />
+      </div>
+
+      {/* Main content section */}
+      <section className="relative z-8 section-px py-4 sm:py-6 md:py-8 lg:py-10 w-full md:h-[calc(100dvh-66px)] ">
+        <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-y-10">
+          {/* Text content */}
+          <div className="w-full flex flex-col gap-3 md:gap-6 order-2 md:order-1">
+            <h1 className="text-xl md:text-2xl text-center md:text-start">
+              Hi, I am
+            </h1>
+            <h1 className="text-3xl md:text-5xl text-center md:text-start  font-bold text-violet-400">
+              <Typewriter
+                options={{
+                  strings: [
+                    "Praveen",
+                    "a Frontend Developer",
+                    "a Ui Developer",
+                    "a Designer",
+                  ],
+                  autoStart: true,
+                  loop: true,
+                }}
+              />
+            </h1>
+            <p className="text-center md:text-justify text-muted-foreground">
+              I am a passionate Front-End Developer, UI designer, and graphic
+              designer with a keen eye for detail and a love for creating
+              visually appealing, user-friendly digital experiences. From
+              designing intuitive interfaces to crafting clean, responsive web
+              applications, I blend creativity with technical skills to bring
+              ideas to life.
+            </p>
+
+            <div className="flex flex-col md:flex-row items-center gap-6">
+              <Link href="/">
+                {/* <Button className="hover:bg-violet-500 hover:text-white px-8 py-4 rounded-full border border-border">
+                  <BriefcaseBusiness /> Hire me
+                </Button> */}
+                <button className="flex gap-2 border bg-background border-border px-6 py-3 rounded-full font-bold hover:bg-violet-500 hover:text-white transition duration-200">
+                  <BriefcaseBusiness /> Hire me
+                </button>
+              </Link>
+
+              <SocialMedia />
+            </div>
+          </div>
+
+          {/* Image content */}
+          <div className="w-full text-white flex md:justify-end justify-center items-center order-1 md:order-2">
+            <div className="relative size-70 md:size-90">
+              <Image
+                src="/assets/hero/praveen.png"
+                alt="Hero background"
+                fill
+                className="object-cover z-6"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+  );
 }

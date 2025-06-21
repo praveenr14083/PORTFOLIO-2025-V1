@@ -19,14 +19,14 @@ const ICONS_MAP = {
 
 export function MobileMenu() {
   return (
-    <nav className="md:hidden flex flex-col gap-6 py-6">
+    <nav className="absolute w-full md:hidden flex flex-col gap-6 py-6 bg-background">
       {NAV_ITEMS.map((item) => {
         const Icon = ICONS_MAP[item.id];
         return (
           <Link
             key={item.id}
             href={item.href}
-            className="flex items-center gap-6 text-white hover:text-violet-500 transition-colors duration-200"
+            className="flex items-center gap-6 hover:text-violet-500 transition-colors duration-200"
           >
             {Icon && <Icon className="text-lg" />}
             <span>{item.name}</span>
