@@ -32,7 +32,7 @@ export function SocialMedia() {
           rel="noopener noreferrer"
           aria-label={media.id}
         >
-          <media.icon className="hover:text-violet-500 transition-colors" />
+          <media.icon className="hover:text-c-primary transition-colors" />
         </Link>
       ))}
     </div>

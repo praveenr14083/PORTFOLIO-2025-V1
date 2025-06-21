@@ -5,7 +5,6 @@ import Image from "next/image";
 import { cn } from "@/lib/utils";
 import { GridPattern } from "@/components/magicui/grid-pattern";
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
 import { SocialMedia } from "../components/SocialMedia";
 import { BriefcaseBusiness } from "lucide-react";
 
@@ -35,7 +34,7 @@ export function HeroSection() {
             <h1 className="text-xl md:text-2xl text-center md:text-start">
               Hi, I am
             </h1>
-            <h1 className="text-3xl md:text-5xl text-center md:text-start  font-bold text-violet-400">
+            <h1 className="text-3xl md:text-5xl text-center md:text-start  font-bold text-c-primary">
               <Typewriter
                 options={{
                   strings: [
@@ -60,10 +59,7 @@ export function HeroSection() {
 
             <div className="flex flex-col md:flex-row items-center gap-6">
               <Link href="/">
-                {/* <Button className="hover:bg-violet-500 hover:text-white px-8 py-4 rounded-full border border-border">
-                  <BriefcaseBusiness /> Hire me
-                </Button> */}
-                <button className="flex gap-2 border bg-background border-border px-6 py-3 rounded-full font-bold hover:bg-violet-500 hover:text-white transition duration-200">
+                <button className="flex gap-2 border bg-background border-border px-6 py-3 rounded-full font-bold hover:bg-c-primary hover:text-white transition duration-200">
                   <BriefcaseBusiness /> Hire me
                 </button>
               </Link>
@@ -74,12 +70,12 @@ export function HeroSection() {
 
           {/* Image content */}
           <div className="w-full text-white flex md:justify-end justify-center items-center order-1 md:order-2">
-            <div className="relative size-70 md:size-90">
+            <div className="relative size-70 md:size-100">
               <Image
-                src="/assets/hero/praveen.png"
+                src="/assets/hero/praveen1.png"
                 alt="Hero background"
                 fill
-                className="object-cover z-6"
+                className="object-contain z-6"
               />
             </div>
           </div>

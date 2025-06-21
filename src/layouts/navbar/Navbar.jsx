@@ -39,7 +39,7 @@ export function Navbar() {
               <Link
                 key={item.id}
                 href={item.href}
-                className="hover:text-violet-500 transition-colors duration-200"
+                className="hover:text-c-primary transition-colors duration-200"
               >
                 {item.name}
               </Link>
@@ -66,7 +66,7 @@ export function Navbar() {
             size="icon"
             aria-label="Toggle Menu"
             onClick={toggleMenu}
-            className="md:hidden size-10 bg-violet-500 hover:bg-[810CA8]violet-500/90 flex items-center justify-center"
+            className="md:hidden size-10 bg-c-primary hover:bg-c-primary/90 flex items-center justify-center"
           >
             {menuOpen ? (
               <X className="text-xl text-white group-hover:text-black" />

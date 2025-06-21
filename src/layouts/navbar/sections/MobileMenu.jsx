@@ -26,7 +26,7 @@ export function MobileMenu() {
           <Link
             key={item.id}
             href={item.href}
-            className="flex items-center gap-6 hover:text-violet-500 transition-colors duration-200"
+            className="flex items-center gap-6 hover:text-c-primary transition-colors duration-200"
           >
             {Icon && <Icon className="text-lg" />}
             <span>{item.name}</span>
