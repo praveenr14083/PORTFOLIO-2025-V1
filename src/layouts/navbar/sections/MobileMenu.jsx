@@ -19,7 +19,7 @@ const ICONS_MAP = {
 
 export function MobileMenu() {
   return (
-    <nav className="absolute w-full md:hidden flex flex-col gap-6 py-6 bg-background">
+    <nav className="absolute left-0 section-px w-full md:hidden flex flex-col gap-6 py-6 bg-background">
       {NAV_ITEMS.map((item) => {
         const Icon = ICONS_MAP[item.id];
         return (

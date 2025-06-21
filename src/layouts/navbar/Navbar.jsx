@@ -18,7 +18,7 @@ export function Navbar() {
   return (
     <nav
       id="navbar"
-      className="sticky top-0 z-10 w-full section-px py-3 bg-background"
+      className="sticky top-0 z-10 w-full section-px py-3 bg-background border border-border border-dashed"
     >
       <section className="flex items-center justify-between">
         {/* Logo & Name */}

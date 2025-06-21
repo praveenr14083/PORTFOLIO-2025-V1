@@ -7,6 +7,8 @@ import { GridPattern } from "@/components/magicui/grid-pattern";
 import Link from "next/link";
 import { SocialMedia } from "../components/SocialMedia";
 import { BriefcaseBusiness } from "lucide-react";
+import "./styles/HeroSection.css";
+import { CoolMode } from "@/components/magicui/cool-mode";
 
 export function HeroSection() {
   return (
@@ -27,27 +29,29 @@ export function HeroSection() {
       </div>
 
       {/* Main content section */}
-      <section className="relative z-8 section-px py-4 sm:py-6 md:py-8 lg:py-10 w-full md:h-[calc(100dvh-66px)] ">
+      <section className="relative z-8 section-px py-8 sm:py-10 md:py-12 lg:py-14 w-full md:h-[calc(100dvh-66px)] ">
         <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-y-10">
           {/* Text content */}
-          <div className="w-full flex flex-col gap-3 md:gap-6 order-2 md:order-1">
+          <div className="w-full flex flex-col justify-center gap-3 md:gap-6 order-2 md:order-1">
             <h1 className="text-xl md:text-2xl text-center md:text-start">
               Hi, I am
             </h1>
-            <h1 className="text-3xl md:text-5xl text-center md:text-start  font-bold text-c-primary">
+
+            <h1 className="text-3xl md:text-5xl text-center md:text-start  font-bold">
               <Typewriter
                 options={{
                   strings: [
-                    "Praveen",
-                    "a Frontend Developer",
-                    "a Ui Developer",
-                    "a Designer",
+                    "<span style='color:#00A3E0'>Praveen</span>",
+                    "a <span style='color:#00A3E0'>Frontend Developer</span>",
+                    "a <span style='color:#00A3E0'>UI Developer</span>",
+                    "a <span style='color:#00A3E0'>Designer</span>",
                   ],
                   autoStart: true,
                   loop: true,
                 }}
               />
             </h1>
+
             <p className="text-center md:text-justify text-muted-foreground">
               I am a passionate Front-End Developer, UI designer, and graphic
               designer with a keen eye for detail and a love for creating
@@ -58,11 +62,14 @@ export function HeroSection() {
             </p>
 
             <div className="flex flex-col md:flex-row items-center gap-6">
-              <Link href="/">
-                <button className="flex gap-2 border bg-background border-border px-6 py-3 rounded-full font-bold hover:bg-c-primary hover:text-white transition duration-200">
-                  <BriefcaseBusiness /> Hire me
-                </button>
-              </Link>
+              <CoolMode>
+                <Link href="/">
+                  <button className="group flex gap-2 border border-c-primary bg-background  px-6 py-3 rounded-full font-semibold hover:bg-c-primary text-c-primary hover:text-white transition duration-200">
+                    <BriefcaseBusiness className="group-hover:animate-[shake_0.5s_infinite_ease-in-out]" />
+                    Hire me
+                  </button>
+                </Link>
+              </CoolMode>
 
               <SocialMedia />
             </div>
@@ -75,7 +82,7 @@ export function HeroSection() {
                 src="/assets/hero/praveen1.png"
                 alt="Hero background"
                 fill
-                className="object-contain z-6"
+                className="object-contain z-6 drop-shadow-[0_0px_35px_rgba(0,163,224,0.3)] "
               />
             </div>
           </div>
