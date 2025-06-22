@@ -4,6 +4,7 @@ import { Navbar } from "@/layouts/navbar/Navbar";
 import { AboutMeSection } from "./sections/AboutMeSection";
 import { SkillsSection } from "./sections/SkillsSection";
 import { MarqueeText } from "./components/MarqueeText";
+import { EducationSection } from "./sections/EducationSection";
 
 export default function HomePage() {
   return (
@@ -13,6 +14,7 @@ export default function HomePage() {
       <MarqueeText />
       <AboutMeSection />
       <SkillsSection />
+      <EducationSection />
     </main>
   );
 }
