@@ -9,7 +9,7 @@ import { BriefcaseBusiness } from "lucide-react";
 export function AboutMeSection() {
   return (
     // About Me Section
-    <section className="relative w-full section-px py-8 sm:py-10 md:py-12 lg:py-14 bg-gray-200/30 dark:bg-black/20">
+    <section className="w-full section-px py-8 sm:py-10 md:py-12 lg:py-14 bg-gray-200/30 dark:bg-black/20">
       {/* Wrap Image and Content */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-y-6">
         <div className="flex justify-center items-center">
@@ -34,7 +34,7 @@ export function AboutMeSection() {
               ABOUT <AuroraText>ME</AuroraText>
             </SparklesText>
           </h1>
-          <p className="text-muted-foreground text-justify">
+          <p className="text-muted-foreground text-center md:text-justify">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
             iste beatae quidem repellendus ut, quaerat totam possimus voluptate!
             Possimus quibusdam voluptates quae incidunt labore maxime et dolore?

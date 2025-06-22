@@ -29,7 +29,7 @@ export function HeroSection() {
       </div>
 
       {/* Main content section */}
-      <section className="relative z-8 section-px py-8 sm:py-10 md:py-12 lg:py-14 w-full md:h-[calc(100dvh-66px)] ">
+      <section className="relative z-8 section-px pb-20 py-8 sm:py-10 md:py-12 lg:py-14 w-full md:h-[calc(100dvh-66px)] ">
         <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-y-10">
           {/* Text content */}
           <div className="w-full flex flex-col justify-center gap-3 md:gap-6 order-2 md:order-1">
@@ -88,6 +88,21 @@ export function HeroSection() {
           </div>
         </div>
       </section>
+
+      <div className="w-full absolute -bottom-2 left-0 overflow-hidden">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+          className="-scale-y-100 w-full h-[60px]"
+        >
+          <path
+            d="M1200 120L0 16.48 0 0 1200 0 1200 120z"
+            className="fill-c-primary "
+          />
+        </svg>
+      </div>
     </section>
   );
 }
