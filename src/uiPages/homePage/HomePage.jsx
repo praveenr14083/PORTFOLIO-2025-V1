@@ -5,6 +5,7 @@ import { AboutMeSection } from "./sections/AboutMeSection";
 import { SkillsSection } from "./sections/SkillsSection";
 import { MarqueeText } from "./components/MarqueeText";
 import { EducationSection } from "./sections/EducationSection";
+import { ContactSection } from "./sections/ContactSection";
 
 export default function HomePage() {
   return (
@@ -15,6 +16,7 @@ export default function HomePage() {
       <AboutMeSection />
       <SkillsSection />
       <EducationSection />
+      <ContactSection />
     </main>
   );
 }
