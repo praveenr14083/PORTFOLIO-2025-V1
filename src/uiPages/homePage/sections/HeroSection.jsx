@@ -11,7 +11,7 @@ import "./styles/HeroSection.css";
 
 export function HeroSection() {
   return (
-    <section className="relative bg-background overflow-hidden">
+    <section id="hero-home" className="relative bg-background overflow-hidden">
       {/* Grid background pattern */}
       <div className="absolute inset-0 z-0">
         <GridPattern

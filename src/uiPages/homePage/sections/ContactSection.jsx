@@ -10,7 +10,10 @@ import { SparkleHeading } from "@/components/common/SparkleHeading";
 export function ContactSection() {
   return (
     // Main Section
-    <section className="w-full section-px py-8 sm:py-10 md:py-12 lg:py-14 bg-background">
+    <section
+      id="contact-me"
+      className="w-full section-px py-8 sm:py-10 md:py-12 lg:py-14 bg-background"
+    >
       {/* Wrap Heading and Image, Contact Form */}
       <div>
         {/* Section Heading */}

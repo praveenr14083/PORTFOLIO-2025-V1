@@ -1,22 +1,28 @@
 import React from "react";
 import { HeroSection } from "./sections/HeroSection";
-import { Navbar } from "@/layouts/navbar/Navbar";
 import { AboutMeSection } from "./sections/AboutMeSection";
 import { SkillsSection } from "./sections/SkillsSection";
 import { EducationSection } from "./sections/EducationSection";
 import { ContactSection } from "./sections/ContactSection";
-import { Footer } from "@/layouts/footer/Footer";
+import MainLayout from "@/layouts/MainLayout";
 
 export default function HomePage() {
   return (
-    <main id="home-page">
-      <Navbar />
+    <MainLayout>
+      {/* Hero Section */}
       <HeroSection />
+
+      {/* About Me Section */}
       <AboutMeSection />
+
+      {/* Skills Section */}
       <SkillsSection />
+
+      {/* Education Section */}
       <EducationSection />
+
+      {/* Contact Section */}
       <ContactSection />
-      <Footer />
-    </main>
+    </MainLayout>
   );
 }

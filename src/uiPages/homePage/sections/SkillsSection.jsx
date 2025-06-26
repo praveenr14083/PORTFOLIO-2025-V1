@@ -6,7 +6,10 @@ import { SparkleHeading } from "@/components/common/SparkleHeading";
 export function SkillsSection() {
   return (
     // Main Section
-    <section className="w-full section-px py-8 sm:py-10 md:py-12 lg:py-14 bg-background">
+    <section
+      id="my-skills"
+      className="w-full section-px py-8 sm:py-10 md:py-12 lg:py-14 bg-background"
+    >
       <div className="w-full flex flex-col justify-center">
         {/* Section Heading */}
         <SparkleHeading firstText="my" secondText="skills" />

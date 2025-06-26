@@ -7,7 +7,7 @@ import { SparkleHeading } from "@/components/common/SparkleHeading";
 export function AboutMeSection() {
   return (
     // About Me Section
-    <section className="bg-c-primary pt-2">
+    <section id="about-me" className="bg-c-primary pt-2">
       <div className="w-full section-px py-8 sm:py-10 md:py-12 lg:py-14 bg-background rounded-t-4xl">
         {/* Section Heading */}
         <SparkleHeading firstText="about" secondText="me" />

@@ -8,7 +8,10 @@ import Marquee from "react-fast-marquee";
 export function Footer() {
   return (
     // Main Secction
-    <footer className="w-full bg-background py-8 sm:py-10 md:py-12 lg:py-14 space-y-8">
+    <section
+      id="footer"
+      className="w-full bg-background py-8 sm:py-10 md:py-12 lg:py-14 space-y-8"
+    >
       <div className="section-px ">
         <div className="flex flex-col items-center gap-6">
           {/* Heading and Description */}
@@ -57,6 +60,6 @@ export function Footer() {
       <div className="text-center text-muted-foreground">
         © {new Date().getFullYear()} Copyright. All Rights Reserved.
       </div>
-    </footer>
+    </section>
   );
 }
