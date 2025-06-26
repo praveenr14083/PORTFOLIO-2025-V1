@@ -1,8 +1,7 @@
 import React from "react";
-import { AuroraText } from "@/components/magicui/aurora-text";
-import { SparklesText } from "@/components/magicui/sparkles-text";
 import { SkillProgress } from "../components/SkillProgress";
 import { SKILLS } from "@/utils/constants/skills";
+import { SparkleHeading } from "@/components/common/SparkleHeading";
 
 export function SkillsSection() {
   return (
@@ -10,17 +9,7 @@ export function SkillsSection() {
     <section className="w-full section-px py-8 sm:py-10 md:py-12 lg:py-14 bg-background">
       <div className="w-full flex flex-col justify-center">
         {/* Section Heading */}
-        <div>
-          <h1 className="text-center font-bold">
-            <SparklesText
-              colors={{ first: "#00A3E0", second: "#0061ff" }}
-              sparklesCount={7}
-              className="text-3xl md:text-6xl"
-            >
-              MY <AuroraText>SKILLS</AuroraText>
-            </SparklesText>
-          </h1>
-        </div>
+        <SparkleHeading firstText="my" secondText="skills" />
 
         {/* Wrap Frontend and Tools Section */}
         <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-8 pt-8 sm:pt-10 md:pt-12 lg:pt-14">

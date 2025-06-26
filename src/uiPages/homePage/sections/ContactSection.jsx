@@ -1,12 +1,11 @@
 import React from "react";
-import { AuroraText } from "@/components/magicui/aurora-text";
-import { SparklesText } from "@/components/magicui/sparkles-text";
 import Image from "next/image";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { ContactDetailsCard } from "../components/ContactDetailsCard";
+import { SparkleHeading } from "@/components/common/SparkleHeading";
 
 export function ContactSection() {
   return (
@@ -15,17 +14,7 @@ export function ContactSection() {
       {/* Wrap Heading and Image, Contact Form */}
       <div>
         {/* Section Heading */}
-        <div>
-          <h1 className="text-center font-bold">
-            <SparklesText
-              colors={{ first: "#00A3E0", second: "#0061ff" }}
-              sparklesCount={7}
-              className="text-3xl md:text-6xl"
-            >
-              CONTACT <AuroraText>ME</AuroraText>
-            </SparklesText>
-          </h1>
-        </div>
+        <SparkleHeading firstText="contact" secondText="me" />
 
         {/* Wrap Image and Contact Form */}
         <div className="grid grid-cols-1 md:grid-cols-2 py-8 sm:py-10 md:py-12 lg:py-14">
