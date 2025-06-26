@@ -11,7 +11,7 @@ import { ContactDetailsCard } from "../components/ContactDetailsCard";
 export function ContactSection() {
   return (
     // Main Section
-    <section className="w-full section-px py-8 sm:py-10 md:py-12 lg:py-14 bg-gray-200/30 dark:bg-black/20">
+    <section className="w-full section-px py-8 sm:py-10 md:py-12 lg:py-14 bg-background">
       {/* Wrap Heading and Image, Contact Form */}
       <div>
         {/* Section Heading */}

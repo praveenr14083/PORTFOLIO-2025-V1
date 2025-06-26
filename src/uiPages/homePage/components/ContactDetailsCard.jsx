@@ -4,10 +4,10 @@ import { Mail, Phone, MapPin } from "lucide-react";
 
 export function ContactDetailsCard() {
   return (
-    <div className="bg-background flex flex-col gap-y-5 md:flex-row md:justify-between p-8 rounded-2xl">
+    <div className="bg-c-primary dark:bg-[#151515]  flex flex-col gap-y-5 md:flex-row md:justify-between p-8 rounded-2xl text-white ">
       {/* Email */}
       <div className="flex items-center gap-3">
-        <div className="bg-c-primary p-3 rounded-full">
+        <div className="bg-black p-3 rounded-full">
           <Mail />
         </div>
 
@@ -16,7 +16,7 @@ export function ContactDetailsCard() {
 
       {/* Phone */}
       <div className="flex items-center gap-3">
-        <div className="bg-c-primary p-3 rounded-full">
+        <div className="bg-black p-3 rounded-full">
           <Phone />
         </div>
         <p>{PERSONAL_DATA.phone}</p>
@@ -24,7 +24,7 @@ export function ContactDetailsCard() {
 
       {/* Address */}
       <div className="flex items-center gap-3">
-        <div className="bg-c-primary p-3 rounded-full">
+        <div className="bg-black p-3 rounded-full">
           <MapPin />
         </div>
         <p>

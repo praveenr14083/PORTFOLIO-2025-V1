@@ -8,7 +8,6 @@ import Link from "next/link";
 import { SocialMedia } from "../components/SocialMedia";
 import { BriefcaseBusiness } from "lucide-react";
 import "./styles/HeroSection.css";
-import { CoolMode } from "@/components/magicui/cool-mode";
 
 export function HeroSection() {
   return (
@@ -62,14 +61,12 @@ export function HeroSection() {
             </p>
 
             <div className="flex flex-col md:flex-row items-center gap-6">
-              <CoolMode>
-                <Link href="/">
-                  <button className="group flex gap-2 border border-c-primary bg-background  px-6 py-3 rounded-full font-semibold hover:bg-c-primary text-c-primary hover:text-white transition duration-200">
-                    <BriefcaseBusiness className="group-hover:animate-[shake_0.5s_infinite_ease-in-out]" />
-                    Hire me
-                  </button>
-                </Link>
-              </CoolMode>
+              <Link href="/">
+                <button className="group flex gap-2 border border-c-primary bg-background  px-6 py-3 rounded-full font-semibold hover:bg-c-primary text-c-primary hover:text-white transition duration-200">
+                  <BriefcaseBusiness className="group-hover:animate-[shake_0.5s_infinite_ease-in-out]" />
+                  Hire me
+                </button>
+              </Link>
 
               <SocialMedia />
             </div>

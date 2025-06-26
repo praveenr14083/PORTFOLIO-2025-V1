@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import { CoolMode } from "@/components/magicui/cool-mode";
 import { AuroraText } from "@/components/magicui/aurora-text";
 import { SparklesText } from "@/components/magicui/sparkles-text";
 import Link from "next/link";
@@ -9,8 +8,8 @@ import { BriefcaseBusiness } from "lucide-react";
 export function AboutMeSection() {
   return (
     // About Me Section
-    <section className="w-full section-px py-8 sm:py-10 md:py-12 lg:py-14 bg-gray-200/30 dark:bg-black/20">
-      <div>
+    <section className="bg-c-primary pt-2">
+      <div className="w-full section-px py-8 sm:py-10 md:py-12 lg:py-14 bg-background rounded-t-4xl">
         {/* Section Heading */}
         <div>
           <h1 className="text-center font-bold">
@@ -51,14 +50,12 @@ export function AboutMeSection() {
               elit.
             </p>
 
-            <CoolMode>
-              <Link href="/">
-                <button className="group flex gap-2 border border-c-primary bg-transparent  px-6 py-3 rounded-full font-semibold hover:bg-c-primary text-c-primary hover:text-white transition duration-200">
-                  <BriefcaseBusiness className="group-hover:animate-[shake_0.5s_infinite_ease-in-out]" />
-                  Hire me
-                </button>
-              </Link>
-            </CoolMode>
+            <Link href="/">
+              <button className="group flex gap-2 border border-c-primary bg-transparent  px-6 py-3 rounded-full font-semibold hover:bg-c-primary text-c-primary hover:text-white transition duration-200">
+                <BriefcaseBusiness className="group-hover:animate-[shake_0.5s_infinite_ease-in-out]" />
+                Hire me
+              </button>
+            </Link>
           </div>
         </div>
       </div>

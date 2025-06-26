@@ -7,7 +7,7 @@ import { SKILLS } from "@/utils/constants/skills";
 export function SkillsSection() {
   return (
     // Main Section
-    <section className="w-full section-px py-8 sm:py-10 md:py-12 lg:py-14 bg-gray-200/30 dark:bg-black/20">
+    <section className="w-full section-px py-8 sm:py-10 md:py-12 lg:py-14 bg-background">
       <div className="w-full flex flex-col justify-center">
         {/* Section Heading */}
         <div>
