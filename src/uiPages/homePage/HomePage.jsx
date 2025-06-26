@@ -13,7 +13,7 @@ export default function HomePage() {
     <main id="home-page">
       <Navbar />
       <HeroSection />
-      <MarqueeText />
+      {/* <MarqueeText /> */}
       <AboutMeSection />
       <SkillsSection />
       <EducationSection />
