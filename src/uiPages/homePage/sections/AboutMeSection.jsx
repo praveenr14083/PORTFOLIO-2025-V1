@@ -24,7 +24,7 @@ export function AboutMeSection() {
         </div>
 
         {/* Wrap Image and Content */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-y-6 py-8 sm:py-10 md:py-12 lg:py-14">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-y-6 pt-8 sm:pt-10 md:pt-12 lg:pt-14">
           <div className="flex justify-center items-center">
             <div className="relative size-70 md:size-100">
               <Image

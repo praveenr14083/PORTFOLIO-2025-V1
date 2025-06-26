@@ -23,7 +23,7 @@ export function SkillsSection() {
         </div>
 
         {/* Wrap Frontend and Tools Section */}
-        <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-8 py-8 sm:py-10 md:py-12 lg:py-14">
+        <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-8 pt-8 sm:pt-10 md:pt-12 lg:pt-14">
           {/* Frontend Skills */}
           <div className="space-y-5">
             <h1 className="text-center text-xl font-bold">Frontend Skills</h1>

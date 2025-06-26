@@ -22,7 +22,7 @@ export function EducationSection() {
         </div>
 
         {/* Wrap Education cards */}
-        <div className="py-8 sm:py-10 md:py-12 lg:py-14">
+        <div className="pt-8 sm:pt-10 md:pt-12 lg:pt-14">
           {MY_QUALIFICATIONS.map((qualification) => (
             <EducationCard key={qualification.id} data={qualification} />
           ))}
