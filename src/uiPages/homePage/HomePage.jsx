@@ -5,6 +5,7 @@ import { SkillsSection } from "./sections/SkillsSection";
 import { EducationSection } from "./sections/EducationSection";
 import { ContactSection } from "./sections/ContactSection";
 import MainLayout from "@/layouts/MainLayout";
+import { MyAchievements } from "./sections/MyAchievements";
 
 export default function HomePage() {
   return (
@@ -20,6 +21,9 @@ export default function HomePage() {
 
       {/* Education Section */}
       <EducationSection />
+
+      {/* My Achievements */}
+      <MyAchievements />
 
       {/* Contact Section */}
       <ContactSection />

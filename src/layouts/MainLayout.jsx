@@ -5,15 +5,14 @@ import { Footer } from "./footer/Footer";
 export default function MainLayout({ children }) {
   return (
     <div>
-      <header>
-        <Navbar />
-      </header>
+      {/* Navbar */}
+      <Navbar />
 
+      {/* Main section */}
       <main>{children}</main>
 
-      <footer>
-        <Footer />
-      </footer>
+      {/* Footer */}
+      <Footer />
     </div>
   );
 }
