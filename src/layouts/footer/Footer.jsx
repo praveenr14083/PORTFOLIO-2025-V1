@@ -43,8 +43,8 @@ export function Footer() {
       </div>
 
       {/* Footer Marquee */}
-      <div className="relative bored border-dashed border-t-1 border-b-1 border-gray-400/20 py-4 italic">
-        <Marquee className="w-full h-[5rem]">
+      <div className="relative bored border-dashed border-t-1 border-b-1 border-gray-400/20 py-4 italic overflow-hidden">
+        <Marquee className="w-full h-[6rem]">
           {SKILLS.frontEndSkills.map((skill) => (
             <h1
               key={skill.id}

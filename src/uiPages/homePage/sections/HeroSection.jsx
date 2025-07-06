@@ -11,6 +11,7 @@ import "./styles/HeroSection.css";
 
 export function HeroSection() {
   return (
+    // Main Section
     <section id="hero-home" className="relative bg-background overflow-hidden">
       {/* Grid background pattern */}
       <div className="absolute inset-0 z-0">
@@ -27,9 +28,9 @@ export function HeroSection() {
         />
       </div>
 
-      {/* Main content section */}
-      <section className="relative z-8 section-px pb-20 py-8 sm:py-10 md:py-12 lg:py-14 w-full md:h-[calc(100dvh-66px)] ">
-        <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-y-10">
+      {/* Container Section */}
+      <div className="section-px pb-20 py-8 sm:py-10 md:py-12 lg:py-14 md:h-[calc(100dvh-66px)]">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-y-10">
           {/* Text content */}
           <div className="w-full flex flex-col justify-center gap-3 md:gap-6 order-2 md:order-1">
             <h1 className="text-xl md:text-2xl text-center md:text-start">
@@ -72,7 +73,7 @@ export function HeroSection() {
             </div>
           </div>
 
-          {/* Image content */}
+          {/* Image */}
           <div className="w-full text-white flex md:justify-end justify-center items-center order-1 md:order-2">
             <div className="relative size-70 md:size-100">
               <Image
@@ -84,8 +85,9 @@ export function HeroSection() {
             </div>
           </div>
         </div>
-      </section>
+      </div>
 
+      {/* Divider */}
       <div className="w-full absolute -bottom-2 left-0 overflow-hidden">
         <svg
           data-name="Layer 1"

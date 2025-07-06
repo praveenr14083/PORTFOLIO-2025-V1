@@ -16,66 +16,70 @@ export function Navbar() {
 
   const toggleMenu = () => setMenuOpen((prev) => !prev);
   return (
+    // Main Section
     <nav
       id="navbar"
-      className="sticky top-0 z-25 w-full section-px py-3 bg-background border-t border-b border-border border-dashed"
+      className="sticky top-0 z-25 w-full bg-background border-t border-b border-border border-dashed"
     >
-      <section className="flex items-center justify-between">
-        {/* Logo & Name */}
-        <div className="flex items-center gap-3">
-          <Webhook className="text-2xl animate-spin" aria-label="Logo Icon" />
+      {/* Container Section */}
+      <div className="section-px py-3">
+        <section className="flex items-center justify-between">
+          {/* Logo & Name */}
+          <div className="flex items-center gap-3">
+            <Webhook className="text-2xl animate-spin" aria-label="Logo Icon" />
 
-          <h1 className="hidden md:flex text-md font-semibold ">
-            {PERSONAL_DATA.name.toUpperCase()}
-            <span>.DEV</span>
-          </h1>
-        </div>
-
-        {/* Navigation & Contact */}
-        <div className="flex items-center gap-3 md:gap-6">
-          {/* Desktop Nav Links */}
-          <div className="hidden md:flex gap-8 font-semibold">
-            {NAV_ITEMS.map((item) => (
-              <Link
-                key={item.id}
-                href={item.href}
-                className="hover:text-c-primary transition-colors duration-200"
-              >
-                {item.name}
-              </Link>
-            ))}
+            <h1 className="hidden md:flex text-md font-semibold ">
+              {PERSONAL_DATA.name.toUpperCase()}
+              <span>.DEV</span>
+            </h1>
           </div>
 
-          {/* Contact Me Button */}
-          <Link href="/" className="hidden md:block">
-            <InteractiveHoverButton>Resume</InteractiveHoverButton>
-          </Link>
+          {/* Navigation & Contact */}
+          <div className="flex items-center gap-3 md:gap-6">
+            {/* Desktop Nav Links */}
+            <div className="hidden md:flex gap-8 font-semibold">
+              {NAV_ITEMS.map((item) => (
+                <Link
+                  key={item.id}
+                  href={item.href}
+                  className="hover:text-c-primary transition-colors duration-200"
+                >
+                  {item.name}
+                </Link>
+              ))}
+            </div>
 
-          {/* Theme Toggle */}
-          <Button
-            size="icon"
-            aria-label="Toggle theme"
-            onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-            className="size-10 bg-[810CA8]transparent text-black dark:text-white hover:bg-[810CA8]transparent rounded-full border border-border"
-          >
-            {theme === "dark" ? <Sun /> : <Moon />}
-          </Button>
+            {/* Contact Me Button */}
+            <Link href="/" className="hidden md:block">
+              <InteractiveHoverButton>Resume</InteractiveHoverButton>
+            </Link>
 
-          {/* Mobile Menu Icon */}
-          <Button
-            size="icon"
-            aria-label="Toggle Menu"
-            onClick={toggleMenu}
-            className="md:hidden size-10 bg-c-primary hover:bg-c-primary/90 flex items-center justify-center"
-          >
-            {menuOpen ? (
-              <X className="text-xl text-white group-hover:text-black" />
-            ) : (
-              <Menu className="text-xl text-white group-hover:text-black" />
-            )}
-          </Button>
-        </div>
-      </section>
+            {/* Theme Toggle */}
+            <Button
+              size="icon"
+              aria-label="Toggle theme"
+              onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+              className="size-10 bg-[810CA8]transparent text-black dark:text-white hover:bg-[810CA8]transparent rounded-full border border-border"
+            >
+              {theme === "dark" ? <Sun /> : <Moon />}
+            </Button>
+
+            {/* Mobile Menu Icon */}
+            <Button
+              size="icon"
+              aria-label="Toggle Menu"
+              onClick={toggleMenu}
+              className="md:hidden size-10 bg-c-primary hover:bg-c-primary/90 flex items-center justify-center"
+            >
+              {menuOpen ? (
+                <X className="text-xl text-white group-hover:text-black" />
+              ) : (
+                <Menu className="text-xl text-white group-hover:text-black" />
+              )}
+            </Button>
+          </div>
+        </section>
+      </div>
       {menuOpen && <MobileMenu />}
     </nav>
   );
