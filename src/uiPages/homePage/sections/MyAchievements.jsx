@@ -42,9 +42,11 @@ export function MyAchievements() {
                 key={index}
                 src={cert.src}
                 alt={cert.alt}
-                width={cert.large ? 500 : 330}
-                height={cert.large ? 500 : 250}
-                className="object-contain z-6 rounded-xl hover:rotate-6 transition-transform duration-300"
+                width={0} // prevent fixed width
+                height={0} // prevent fixed height
+                sizes="(max-width: 768px) 100vw, 500px"
+                className={`object-contain rounded-xl z-6 hover:scale-102 transition-transform duration-300
+                      w-full md:w-[${cert.large ? "500px" : "330px"}]`}
               />
             ))}
           </div>
