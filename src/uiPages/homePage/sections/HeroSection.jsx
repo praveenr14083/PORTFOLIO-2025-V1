@@ -32,7 +32,7 @@ export function HeroSection() {
       <div className="section-px pb-20 py-8 sm:py-10 md:py-12 lg:py-14 md:h-[calc(100dvh-66px)]">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-y-10">
           {/* Text content */}
-          <div className="w-full flex flex-col justify-center gap-3 md:gap-6 order-2 md:order-1">
+          <div className="w-full flex flex-col justify-center gap-3 md:gap-6 order-2 md:order-1 z-6">
             <h1 className="text-xl md:text-2xl text-center md:text-start">
               Hi, I am
             </h1>
@@ -80,6 +80,7 @@ export function HeroSection() {
                 src="/assets/hero/praveen1.png"
                 alt="Hero background"
                 fill
+                priority
                 className="object-contain z-6 drop-shadow-[0_0px_35px_rgba(0,163,224,0.3)] "
               />
             </div>
