@@ -9,6 +9,7 @@ import { ContactSection } from "./sections/ContactSection";
 import MainLayout from "@/layouts/MainLayout";
 import { MyAchievements } from "./sections/MyAchievements";
 import { PreLoader } from "@/components/common/PreLoader";
+import { ProjectsSection } from "./sections/ProjectsSection";
 
 export default function HomePage() {
   const [loading, setLoading] = useState(true);
@@ -30,6 +31,9 @@ export default function HomePage() {
 
       {/* Skills Section */}
       <SkillsSection />
+
+      {/* Project section */}
+      <ProjectsSection />
 
       {/* Education Section */}
       <EducationSection />
