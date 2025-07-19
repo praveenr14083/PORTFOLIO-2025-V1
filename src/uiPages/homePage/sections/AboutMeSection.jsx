@@ -31,16 +31,16 @@ export function AboutMeSection() {
 
               {/* Content */}
               <div className="flex flex-col gap-6 items-center md:items-start">
-                <p className="text-muted-foreground text-center md:text-justify">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Explicabo iste beatae quidem repellendus ut, quaerat totam
-                  possimus voluptate! Possimus quibusdam voluptates quae
-                  incidunt labore maxime et dolore? Nihil, expedita in! Lorem
-                  ipsum dolor sit amet consectetur adipisicing elit. Explicabo
-                  iste beatae quidem repellendus ut, quaerat totam possimus
-                  voluptate! Possimus quibusdam voluptates quae incidunt labore
-                  maxime et dolore? Nihil, expedita in! Lorem ipsum dolor sit
-                  amet consectetur adipisicing elit.
+                <p className="text-muted-foreground text-center md:text-justify md:text-lg">
+                  I have completed my BSc in Computer Science, which has
+                  provided me with a strong foundation in programming and
+                  problem-solving. Alongside my academic journey, I have
+                  developed skills as a Front-End Developer, UI designer, and
+                  graphic designer. I enjoy blending creativity with technology
+                  to build visually appealing, responsive, and user-friendly
+                  websites and applications. I am passionate about learning new
+                  technologies and continuously improving my craft to create
+                  impactful digital experiences.
                 </p>
 
                 <Link href="/">

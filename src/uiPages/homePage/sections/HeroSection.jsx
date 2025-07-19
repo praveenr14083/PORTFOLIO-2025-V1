@@ -52,7 +52,7 @@ export function HeroSection() {
               />
             </h1>
 
-            <p className="text-center md:text-justify text-muted-foreground">
+            <p className="text-center md:text-lg md:text-justify text-muted-foreground">
               I am a passionate Front-End Developer, UI designer, and graphic
               designer with a keen eye for detail and a love for creating
               visually appealing, user-friendly digital experiences. From
