@@ -13,7 +13,26 @@ const projects = [
     githubUrl: "#",
     readMoreUrl: "#",
   },
+
+  {
+    title: "Noto - Note Taking App",
+    description:
+      "A full-stack note-taking web app built with Next.js, Shadcn, and Tailwind CSS. It features seamless CRUD operations, MongoDB integration, and a modern UI for organizing notes efficiently.",
+    image: "/assets/projects/noto-note-taking-app.png",
+    tags: [
+      "Next JS",
+      "Shadcn",
+      "Tailwind CSS",
+      "Node JS",
+      "Express JS",
+      "Mongo DB",
+    ],
+    demoUrl: "https://noto-note-taking-webapp.vercel.app/",
+    githubUrl: "https://github.com/praveenr14083/Noto-NoteTakingApp.git",
+    readMoreUrl: "https://noto-note-taking-webapp.vercel.app/",
+  },
 ];
+// noto-note-taking-app
 
 export function ProjectsSection() {
   return (

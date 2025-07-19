@@ -32,7 +32,7 @@ export function ProjectCard({
         </p>
 
         {/* Tags */}
-        <div className="flex flex-wrap gap-2 text-sm text-muted-foreground">
+        <div className="flex flex-wrap gap-2 text-sm">
           {tags.map((tag, idx) => (
             <span
               key={idx}
