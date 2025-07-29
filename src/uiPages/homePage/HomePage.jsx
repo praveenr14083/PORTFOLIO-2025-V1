@@ -4,7 +4,10 @@ import React, { useEffect, useState } from "react";
 import { HeroSection } from "./sections/HeroSection";
 import { AboutMeSection } from "./sections/AboutMeSection";
 import { SkillsSection } from "./sections/SkillsSection";
-import { EducationSection } from "./sections/EducationSection";
+import {
+  EducationSection,
+  MyJourneySection,
+} from "./sections/MyJourneySection";
 import { ContactSection } from "./sections/ContactSection";
 import MainLayout from "@/layouts/MainLayout";
 import { MyAchievements } from "./sections/MyAchievements";
@@ -35,8 +38,8 @@ export default function HomePage() {
       {/* Project section */}
       <ProjectsSection />
 
-      {/* Education Section */}
-      <EducationSection />
+      {/* Mu Hourney Section - Education & Experience */}
+      <MyJourneySection />
 
       {/* My Achievements */}
       <MyAchievements />

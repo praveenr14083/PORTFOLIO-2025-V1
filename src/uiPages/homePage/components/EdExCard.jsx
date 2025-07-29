@@ -1,7 +1,7 @@
 import React from "react";
 import { GraduationCap, Cog, School, University } from "lucide-react";
 
-export function EducationCard({ data }) {
+export function EdExCard({ data }) {
   return (
     // Wrap Icon and Content Section
     <div className="w-full flex gap-1">
@@ -26,14 +26,16 @@ export function EducationCard({ data }) {
 
         {/* Course and Institute */}
         <div className="space-y-1">
-          <h1 className="text-lg md:text-2xl font-bold">{data.course}</h1>
-          <p className="text-muted-foreground">{data.institute}</p>
+          <h1 className="text-lg md:text-2xl font-semibold">{data.title}</h1>
+          <p className="text-muted-foreground">{data.description}</p>
         </div>
 
         {/* Percentage */}
-        <p className="border border-c-primary rounded-tl-full rounded-tr-full rounded-br-full  px-4 py-2 inline">
-          {data.percentage}
-        </p>
+        {data?.percentage && (
+          <p className="border border-c-primary rounded-tl-full rounded-tr-full rounded-br-full  px-4 py-2 inline">
+            {data.percentage}
+          </p>
+        )}
       </div>
     </div>
   );

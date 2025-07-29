@@ -28,7 +28,7 @@ export function ProjectCard({
         <div className="p-4 space-y-3">
           <h2 className="text-xl font-semibold text-foreground">{title}</h2>
 
-          <p className="text-sm text-muted-foreground text-justify line-clamp-3">
+          <p className="text-sm text-muted-foreground text-justify">
             {description}
           </p>
 
