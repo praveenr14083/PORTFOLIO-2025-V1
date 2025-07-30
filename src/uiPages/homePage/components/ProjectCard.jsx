@@ -9,24 +9,31 @@ export function ProjectCard({
   tags,
   demoUrl,
   githubUrl,
-  readMoreUrl,
+  companyName = "self-project",
+  // readMoreUrl,
 }) {
   return (
-    <div className="group flex flex-col justify-between min-w-[320px] max-w-[350px] rounded-xl bg-card border border-border overflow-hidden transition">
+    <div className="group flex flex-col justify-between w-full md:min-w-[320px] md:max-w-[350px] rounded-xl bg-card border border-border overflow-hidden transition">
       <div>
         {/* Image */}
         <div className="relative w-full h-[250px]">
-          <Image
-            src={image}
-            alt={`${title} Preview`}
-            fill
-            className="object-cover group-hover:scale-105 transition-transform duration-500"
-          />
+          <a href={demoUrl} target="_blank" rel="noopener noreferrer">
+            <Image
+              src={image}
+              alt={`${title} Preview`}
+              fill
+              className="object-cover group-hover:scale-105 transition-transform duration-500"
+            />
+          </a>
         </div>
 
         {/* Content */}
         <div className="p-4 space-y-3">
           <h2 className="text-xl font-semibold text-foreground">{title}</h2>
+
+          <p className="uppercase text-sm text-c-primary font-semibold tracking-widest">
+            {companyName}
+          </p>
 
           <p className="text-sm text-muted-foreground text-justify">
             {description}
@@ -59,7 +66,7 @@ export function ProjectCard({
               Demo
             </a>
           )}
-          {readMoreUrl && (
+          {/* {readMoreUrl && (
             <a
               href={readMoreUrl}
               target="_blank"
@@ -69,7 +76,7 @@ export function ProjectCard({
               <BookOpen size={16} />
               Read More
             </a>
-          )}
+          )} */}
         </div>
 
         {githubUrl && (

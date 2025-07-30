@@ -13,7 +13,7 @@ const ICONS_MAP = {
   about: Info,
   projects: FolderKanban,
   skills: BrainCircuit,
-  education: GraduationCap,
+  myJourney: GraduationCap,
   contact: Mail,
 };
 

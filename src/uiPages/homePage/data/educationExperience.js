@@ -35,7 +35,7 @@ export const EDUCATION = [
 export const EXPERIENCE = [
   {
     id: "jas-digicraft-tek",
-    title: "Jas digicraft Tek",
+    title: "JAS DigicraftTek",
     description: "Front end developer",
     year: "2017-2018",
   },

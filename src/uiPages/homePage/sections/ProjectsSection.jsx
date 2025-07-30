@@ -1,19 +1,18 @@
 import React from "react";
 import { SparkleHeading } from "@/components/common/SparkleHeading";
 import { ProjectCard } from "../components/ProjectCard";
+import { EXPERIENCE } from "../data/educationExperience";
 
 const projects = [
   {
-    title: "Portfolio Website",
-    description:
-      "A modern portfolio website built using Next.js, showcasing projects, skills, and achievements with smooth animations and responsive design.",
-    image: "/assets/projects/portfolio.png",
-    tags: ["Next.js", "React", "Tailwind CSS"],
+    title: "JAS DigicraftTek Portfolio",
+    description: "Portfolio website",
+    companyName: EXPERIENCE[0].title,
+    image: "/assets/projects/jas-digicraft-tek.png",
+    tags: ["Next JS", "Tailwind CSS", "Shadcn"],
     demoUrl: "#",
     githubUrl: "#",
-    readMoreUrl: "#",
   },
-
   {
     title: "Noto - Note Taking App",
     description:
@@ -29,10 +28,35 @@ const projects = [
     ],
     demoUrl: "https://noto-note-taking-webapp.vercel.app/",
     githubUrl: "https://github.com/praveenr14083/Noto-NoteTakingApp.git",
-    readMoreUrl: "https://noto-note-taking-webapp.vercel.app/",
+  },
+  {
+    title: "Cakedoo",
+    description: "Cake website",
+    image: "/assets/projects/cakedoo.png",
+    tags: ["React", "Tailwind CSS"],
+    demoUrl: "#",
+    githubUrl: "#",
+  },
+  {
+    title: "Eco Smart Waste Mangement System",
+    description:
+      "This Project I did Hardware related work, like Implement IOT System,Micro controller programming, PCB Connection and Integreated Microcntroller with Sensors.",
+    companyName: "College Project",
+    image: "/assets/projects/cakedoo.png",
+    tags: ["React", "Tailwind CSS"],
+    demoUrl: "#",
+    githubUrl: "#",
+  },
+  {
+    title: "Jasfin",
+    description: "Finance website",
+    companyName: EXPERIENCE[0].title,
+    image: "/assets/projects/jasfin.png",
+    tags: ["React", "Vite", "Tailwind CSS"],
+    demoUrl: "#",
+    githubUrl: "#",
   },
 ];
-// noto-note-taking-app
 
 export function ProjectsSection() {
   return (
