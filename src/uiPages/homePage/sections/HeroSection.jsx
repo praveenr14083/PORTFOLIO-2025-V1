@@ -42,6 +42,7 @@ export function HeroSection() {
                 options={{
                   strings: [
                     "<span style='color:#00A3E0'>Praveen</span>",
+                    "a <span style='color:#00A3E0'>Web Designer</span>",
                     "a <span style='color:#00A3E0'>Frontend Developer</span>",
                     "a <span style='color:#00A3E0'>UI Developer</span>",
                     "a <span style='color:#00A3E0'>Designer</span>",
@@ -53,12 +54,12 @@ export function HeroSection() {
             </h1>
 
             <p className="text-center md:text-lg md:text-justify text-muted-foreground">
-              I am a passionate Front-End Developer, UI designer, and graphic
-              designer with a keen eye for detail and a love for creating
-              visually appealing, user-friendly digital experiences. From
-              designing intuitive interfaces to crafting clean, responsive web
-              applications, I blend creativity with technical skills to bring
-              ideas to life.
+              I am Praveen R, a passionate Front-End Developer, Web & UI
+              Designer, and Graphic Designer with a strong sense of detail and a
+              dedication to crafting visually stunning, responsive, and
+              user-friendly digital experiences. I blend creativity with
+              technical expertise to design intuitive interfaces and build
+              clean, modern web applications.
             </p>
 
             <div className="flex flex-col md:flex-row items-center gap-6">

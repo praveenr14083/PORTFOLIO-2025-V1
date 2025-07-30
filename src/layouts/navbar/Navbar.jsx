@@ -1,7 +1,8 @@
 "use client";
 
 import React, { useState } from "react";
-import { Link } from "react-scroll";
+import { Link as ScrollLink } from "react-scroll";
+import Link from "next/link";
 import { useTheme } from "next-themes";
 import { NAV_ITEMS } from "@/utils/constants/navItems";
 import { PERSONAL_DATA } from "@/utils/constants/personalData";
@@ -25,7 +26,7 @@ export function Navbar() {
       <div className="section-px py-3">
         <section className="flex items-center justify-between">
           {/* Logo & Name */}
-          <Link to="hero" smooth={true} offset={-60} spy={true}>
+          <ScrollLink to="hero" smooth={true} offset={-60} spy={true}>
             <div className="flex items-center gap-3">
               <Webhook className="text-2xl animate-spin" />
 
@@ -34,28 +35,29 @@ export function Navbar() {
                 <span>.DEV</span>
               </h1>
             </div>
-          </Link>
+          </ScrollLink>
 
           {/* Navigation & Contact */}
           <div className="flex items-center gap-3 md:gap-6">
             {/* Desktop Nav Links */}
             <div className="hidden md:flex gap-8 font-semibold">
               {NAV_ITEMS.map((item) => (
-                <Link
+                <ScrollLink
                   key={item.id}
                   to={item.href}
                   smooth={true}
                   offset={-60}
                   spy={true}
+                  activeClass="text-c-primary transition-colors duration-500"
                   className="hover:text-c-primary transition-colors duration-200"
                 >
                   {item.name}
-                </Link>
+                </ScrollLink>
               ))}
             </div>
 
             {/* Contact Me Button */}
-            <Link href="/" className="hidden md:block">
+            <Link href="/contact" className="hidden md:block">
               <InteractiveHoverButton>Resume</InteractiveHoverButton>
             </Link>
 

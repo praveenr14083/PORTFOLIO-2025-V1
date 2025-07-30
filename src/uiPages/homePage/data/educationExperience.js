@@ -4,7 +4,7 @@ export const EDUCATION = [
     title: "B.sc. Computer Science",
     description: "Pioneer Kumaraswamy College, Nagercoil.",
     year: "2022-2025",
-    percentage: "6.8",
+    percentage: "CGPA: 7.34",
   },
 
   {
@@ -37,12 +37,12 @@ export const EXPERIENCE = [
     id: "jas-digicraft-tek",
     title: "JAS DigicraftTek",
     description: "Front end developer",
-    year: "2017-2018",
+    year: "2025",
   },
   {
     id: "g-tec",
     title: "Python Internship (20-Days)",
     description: "G-Tec Computer Education Institute",
-    year: "2017-2018",
+    year: "DEC 2024 - JAN 2025",
   },
 ];

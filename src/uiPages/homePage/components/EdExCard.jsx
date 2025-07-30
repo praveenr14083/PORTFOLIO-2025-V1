@@ -1,5 +1,12 @@
 import React from "react";
-import { GraduationCap, Cog, School, University } from "lucide-react";
+import {
+  GraduationCap,
+  Cog,
+  School,
+  University,
+  Building2,
+  Building,
+} from "lucide-react";
 
 export function EdExCard({ data }) {
   return (
@@ -9,10 +16,15 @@ export function EdExCard({ data }) {
         {/* Icon and Vertical line */}
         <div className="p-3 border-1 border-dashed border-c-primary rounded-full">
           {/* Conditional rendering of icons based on the year */}
-          {data.year === "2022-2025" && <GraduationCap />}
-          {data.year === "2020-2022" && <Cog />}
-          {data.year === "2019-2020" && <School />}
-          {data.year === "2017-2018" && <University />}
+          {/* Education */}
+          {data.id === "bsc" && <GraduationCap />}
+          {data.id === "dme" && <Cog />}
+          {data.id === "hsc" && <School />}
+          {data.id === "sslc" && <University />}
+
+          {/* Expreience */}
+          {data.id === "jas-digicraft-tek" && <Building2 />}
+          {data.id === "g-tec" && <Building />}
         </div>
 
         {/* Vertical Line */}

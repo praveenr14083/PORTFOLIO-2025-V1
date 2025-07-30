@@ -1,7 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
-import { BriefcaseBusiness } from "lucide-react";
+import { Download } from "lucide-react";
 import { SparkleHeading } from "@/components/common/SparkleHeading";
 
 export function AboutMeSection() {
@@ -32,23 +31,21 @@ export function AboutMeSection() {
               {/* Content */}
               <div className="flex flex-col gap-6 items-center md:items-start">
                 <p className="text-muted-foreground text-center md:text-justify md:text-lg">
-                  I have completed my BSc in Computer Science, which has
-                  provided me with a strong foundation in programming and
-                  problem-solving. Alongside my academic journey, I have
-                  developed skills as a Front-End Developer, UI designer, and
-                  graphic designer. I enjoy blending creativity with technology
-                  to build visually appealing, responsive, and user-friendly
-                  websites and applications. I am passionate about learning new
-                  technologies and continuously improving my craft to create
-                  impactful digital experiences.
+                  I am Praveen R, and I have completed my B.Sc. in Computer
+                  Science, which provided me with a solid foundation in
+                  programming. Alongside my studies, I developed skills as a
+                  Front-End Developer, UI Designer, and Graphic Designer,
+                  blending creativity with technology to build visually
+                  appealing, responsive, and user-friendly websites and
+                  applications. I am passionate about learning new technologies
+                  and continuously improving my craft to create impactful
+                  digital experiences.
                 </p>
 
-                <Link href="/">
-                  <button className="group flex gap-2 border border-c-primary bg-transparent  px-6 py-3 rounded-full font-semibold hover:bg-c-primary text-c-primary hover:text-white transition duration-200">
-                    <BriefcaseBusiness className="group-hover:animate-[shake_0.5s_infinite_ease-in-out]" />
-                    Hire me
-                  </button>
-                </Link>
+                <button className="group flex gap-2 border border-c-primary bg-transparent  px-6 py-3 rounded-full font-semibold hover:bg-c-primary text-c-primary hover:text-white transition duration-200">
+                  <Download />
+                  Resume
+                </button>
               </div>
             </div>
           </div>

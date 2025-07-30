@@ -16,10 +16,10 @@ export function MyJourneySection() {
           {/* Wrap Education cards */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 pt-8 sm:pt-10 md:pt-12 lg:pt-14">
             {/* Education Section */}
-            <div className="space-y-5">
+            <div className="space-y-5 order-2 md:order-1">
               <h1 className="text-center text-xl font-bold">Education</h1>
               <p className="text-center text-muted-foreground">
-                Here are the tools I use to streamline my development workflow.
+                My academic journey and qualifications.
               </p>
 
               <div>
@@ -30,10 +30,10 @@ export function MyJourneySection() {
             </div>
 
             {/* Experience Section */}
-            <div className="space-y-5">
+            <div className="space-y-5 order-1 md:order-2">
               <h1 className="text-center text-xl font-bold">Experience</h1>
               <p className="text-center text-muted-foreground">
-                Here are the tools I use to streamline my development workflow.
+                Professional roles and hands-on experience.
               </p>
 
               <div>
