@@ -16,16 +16,16 @@ export function ProjectCard({
     <div className="group flex flex-col justify-between w-full md:min-w-[320px] md:max-w-[350px] rounded-xl bg-card border border-border overflow-hidden transition">
       <div>
         {/* Image */}
-        <div className="relative w-full h-[250px]">
-          <a href={demoUrl} target="_blank" rel="noopener noreferrer">
+        <a href={demoUrl} target="_blank" rel="noopener noreferrer">
+          <div className="relative w-full h-[250px]">
             <Image
               src={image}
               alt={`${title} Preview`}
               fill
               className="object-cover group-hover:scale-105 transition-transform duration-500"
             />
-          </a>
-        </div>
+          </div>
+        </a>
 
         {/* Content */}
         <div className="p-4 space-y-3">

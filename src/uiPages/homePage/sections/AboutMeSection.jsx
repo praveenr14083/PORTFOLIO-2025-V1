@@ -7,7 +7,7 @@ import { SparkleHeading } from "@/components/common/SparkleHeading";
 export function AboutMeSection() {
   return (
     // About Me Outer Section
-    <section id="about-me" className="bg-c-primary pt-2">
+    <section id="about" className="bg-c-primary pt-2">
       {/* Inner Section*/}
       <section className="bg-background rounded-t-4xl">
         {/* Container Section */}

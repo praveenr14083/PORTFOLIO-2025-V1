@@ -1,5 +1,5 @@
 import React from "react";
-import Link from "next/link";
+import { Link } from "react-scroll";
 import {
   Info,
   FolderKanban,
@@ -17,7 +17,7 @@ const ICONS_MAP = {
   contact: Mail,
 };
 
-export function MobileMenu() {
+export function MobileMenu({ setMenuOpen }) {
   return (
     <nav className="absolute left-0 section-px h-[100dvh] w-full md:hidden flex flex-col gap-6 py-6 bg-background">
       {NAV_ITEMS.map((item) => {
@@ -25,7 +25,11 @@ export function MobileMenu() {
         return (
           <Link
             key={item.id}
-            href={item.href}
+            to={item.href}
+            smooth={true}
+            offset={-55}
+            spy={true}
+            onClick={() => setMenuOpen(false)}
             className="flex items-center gap-6 hover:text-c-primary transition-colors duration-200"
           >
             {Icon && <Icon className="text-lg" />}

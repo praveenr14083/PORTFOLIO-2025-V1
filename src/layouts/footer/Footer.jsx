@@ -1,7 +1,7 @@
 import { SocialMedia } from "@/uiPages/homePage/components/SocialMedia";
 import React from "react";
 import { NAV_ITEMS } from "@/utils/constants/navItems";
-import Link from "next/link";
+import { Link } from "react-scroll";
 import { SKILLS } from "@/utils/constants/skills";
 import Marquee from "react-fast-marquee";
 
@@ -29,7 +29,10 @@ export function Footer() {
             {NAV_ITEMS.map((item) => (
               <Link
                 key={item.id}
-                href={item.href}
+                to={item.href}
+                smooth={true}
+                offset={-60}
+                spy={true}
                 className="hover:text-c-primary transition-colors duration-200"
               >
                 {item.name}

@@ -4,7 +4,7 @@ import Typewriter from "typewriter-effect";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
 import { GridPattern } from "@/components/magicui/grid-pattern";
-import Link from "next/link";
+import { Link } from "react-scroll";
 import { SocialMedia } from "../components/SocialMedia";
 import { BriefcaseBusiness } from "lucide-react";
 import "./styles/HeroSection.css";
@@ -12,7 +12,7 @@ import "./styles/HeroSection.css";
 export function HeroSection() {
   return (
     // Main Section
-    <section id="hero-home" className="relative bg-background overflow-hidden">
+    <section id="hero" className="relative bg-background overflow-hidden">
       {/* Grid background pattern */}
       <div className="absolute inset-0 z-0">
         <GridPattern
@@ -62,7 +62,7 @@ export function HeroSection() {
             </p>
 
             <div className="flex flex-col md:flex-row items-center gap-6">
-              <Link href="/">
+              <Link to="contact" smooth={true} offset={-60} spy={true}>
                 <button className="group flex gap-2 border border-c-primary bg-background  px-6 py-3 rounded-full font-semibold hover:bg-c-primary text-c-primary hover:text-white transition duration-200">
                   <BriefcaseBusiness className="group-hover:animate-[shake_0.5s_infinite_ease-in-out]" />
                   Hire me
@@ -80,7 +80,7 @@ export function HeroSection() {
                 src="/assets/hero/praveen1.png"
                 alt="Hero background"
                 fill
-                priority
+                priority={true}
                 className="object-contain z-6 drop-shadow-[0_0px_35px_rgba(0,163,224,0.3)] "
               />
             </div>

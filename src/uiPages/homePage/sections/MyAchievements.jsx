@@ -24,7 +24,7 @@ const certificates = [
 export function MyAchievements() {
   return (
     // Main Section
-    <section id="my-acheivements" className="bg-background">
+    <section id="acheivements" className="bg-background">
       {/* Container Section */}
       <section className="section-px py-8 sm:py-10 md:py-12 lg:py-14">
         <div>

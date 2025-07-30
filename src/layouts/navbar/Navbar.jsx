@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import Link from "next/link";
+import { Link } from "react-scroll";
 import { useTheme } from "next-themes";
 import { NAV_ITEMS } from "@/utils/constants/navItems";
 import { PERSONAL_DATA } from "@/utils/constants/personalData";
@@ -25,14 +25,16 @@ export function Navbar() {
       <div className="section-px py-3">
         <section className="flex items-center justify-between">
           {/* Logo & Name */}
-          <div className="flex items-center gap-3">
-            <Webhook className="text-2xl animate-spin" aria-label="Logo Icon" />
+          <Link to="hero" smooth={true} offset={-60} spy={true}>
+            <div className="flex items-center gap-3">
+              <Webhook className="text-2xl animate-spin" />
 
-            <h1 className="hidden md:flex text-md font-semibold ">
-              {PERSONAL_DATA.name.toUpperCase()}
-              <span>.DEV</span>
-            </h1>
-          </div>
+              <h1 className="hidden md:flex text-md font-semibold ">
+                {PERSONAL_DATA.name.toUpperCase()}
+                <span>.DEV</span>
+              </h1>
+            </div>
+          </Link>
 
           {/* Navigation & Contact */}
           <div className="flex items-center gap-3 md:gap-6">
@@ -41,7 +43,10 @@ export function Navbar() {
               {NAV_ITEMS.map((item) => (
                 <Link
                   key={item.id}
-                  href={item.href}
+                  to={item.href}
+                  smooth={true}
+                  offset={-60}
+                  spy={true}
                   className="hover:text-c-primary transition-colors duration-200"
                 >
                   {item.name}
@@ -80,7 +85,7 @@ export function Navbar() {
           </div>
         </section>
       </div>
-      {menuOpen && <MobileMenu />}
+      {menuOpen && <MobileMenu setMenuOpen={setMenuOpen} />}
     </nav>
   );
 }

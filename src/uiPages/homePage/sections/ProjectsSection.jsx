@@ -61,7 +61,7 @@ const projects = [
 export function ProjectsSection() {
   return (
     // Main section
-    <section id="project-section" className="bg-background">
+    <section id="projects" className="bg-background">
       {/* Container section */}
       <section className="section-px py-8 sm:py-10 md:py-12 lg:py-14">
         <div>
