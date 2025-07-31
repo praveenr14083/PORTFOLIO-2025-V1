@@ -62,7 +62,10 @@ export function Navbar() {
 
             {/* Download Resume Button */}
 
-            <InteractiveHoverButton onClick={handlePreviewClick}>
+            <InteractiveHoverButton
+              className="hidden md:block"
+              onClick={handlePreviewClick}
+            >
               Resume
             </InteractiveHoverButton>
 
