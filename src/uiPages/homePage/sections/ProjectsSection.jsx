@@ -8,8 +8,8 @@ const projects = [
     title: "JAS DigicraftTek Portfolio",
     description:
       "A modern and responsive portfolio website designed to showcase digital services, past projects, and creative expertise. Built with Next.js, Tailwind CSS, and Shadcn UI, it features smooth navigation, an interactive UI, and a visually appealing layout optimized for all devices.",
-    companyName: EXPERIENCE[0].title,
-    image: "/assets/projects/jas-digicraft-tek.png",
+    companyName: EXPERIENCE[0].description,
+    image: "/assets/projects/jas-digicraft-tek-portfolio.png",
     tags: ["Next JS", "Tailwind CSS", "Shadcn"],
     demoUrl: "https://jas-digicrafttek.vercel.app/",
     githubUrl: "#",
@@ -46,16 +46,16 @@ const projects = [
       "A beautifully designed cake shop website built with React and Tailwind CSS, featuring responsive layouts and engaging visuals.",
     image: "/assets/projects/cakedoo.png",
     tags: ["React", "Tailwind CSS"],
-    demoUrl: "#",
-    githubUrl: "#",
+    demoUrl: "https://cakeadoo.netlify.app/",
+    githubUrl: "https://github.com/praveenr14083/cakeadoo.git",
   },
 
   {
     title: "Jasfin",
     description:
       "A finance-focused website developed using React and Vite, featuring a clean, responsive design tailored for financial services.",
-    companyName: EXPERIENCE[0].title,
-    image: "/assets/projects/jasfin.png",
+    companyName: EXPERIENCE[0].description,
+    image: "/assets/projects/jasfin-finance.png",
     tags: ["React", "Vite", "Tailwind CSS"],
     demoUrl: "https://jasfin.netlify.app/",
     githubUrl: "#",

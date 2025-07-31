@@ -4,6 +4,10 @@ import { Download } from "lucide-react";
 import { SparkleHeading } from "@/components/common/SparkleHeading";
 
 export function AboutMeSection() {
+  const handlePreviewClick = () => {
+    window.open("/assets/resume/PRAVEEN-R-RESUME.pdf", "_blank");
+  };
+
   return (
     // About Me Outer Section
     <section id="about" className="bg-c-primary pt-2">
@@ -42,7 +46,10 @@ export function AboutMeSection() {
                   digital experiences.
                 </p>
 
-                <button className="group flex gap-2 border border-c-primary bg-transparent  px-6 py-3 rounded-full font-semibold hover:bg-c-primary text-c-primary hover:text-white transition duration-200">
+                <button
+                  onClick={handlePreviewClick}
+                  className="group flex gap-2 border border-c-primary bg-transparent  px-6 py-3 rounded-full font-semibold hover:bg-c-primary text-c-primary hover:text-white transition duration-200"
+                >
                   <Download />
                   Resume
                 </button>

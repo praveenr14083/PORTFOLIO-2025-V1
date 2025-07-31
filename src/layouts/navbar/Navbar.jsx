@@ -15,6 +15,10 @@ export function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const { theme, setTheme } = useTheme();
 
+  const handlePreviewClick = () => {
+    window.open("/assets/resume/PRAVEEN-R-RESUME.pdf", "_blank");
+  };
+
   const toggleMenu = () => setMenuOpen((prev) => !prev);
   return (
     // Main Section
@@ -56,10 +60,11 @@ export function Navbar() {
               ))}
             </div>
 
-            {/* Contact Me Button */}
-            <Link href="/contact" className="hidden md:block">
-              <InteractiveHoverButton>Resume</InteractiveHoverButton>
-            </Link>
+            {/* Download Resume Button */}
+
+            <InteractiveHoverButton onClick={handlePreviewClick}>
+              Resume
+            </InteractiveHoverButton>
 
             {/* Theme Toggle */}
             <Button
