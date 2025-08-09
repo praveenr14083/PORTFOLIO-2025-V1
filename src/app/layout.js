@@ -22,7 +22,7 @@ export const metadata = {
   },
 };
 
-const GA_TRACKING_ID = process.env.NEXT_PUBLIC_GA_ID;
+const GA_TRACKING_ID = "G-V0LNKM41RW";
 
 export default function RootLayout({ children }) {
   return (
