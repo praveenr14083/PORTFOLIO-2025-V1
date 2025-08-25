@@ -17,7 +17,7 @@ export function Footer() {
           {/* Heading and Description */}
           <div className="space-y-4">
             <h1 className="text-2xl font-bold text-c-primary text-center">
-              PRAVEEN.DEV
+              PRAVEEN R
             </h1>
             <p className="text-center text-muted-foreground">
               Designing with Purpose. Developing with Precision.
