@@ -18,7 +18,7 @@ export const metadata = {
   description:
     "A portfolio website showcasing Praveen's projects, skills, and experience in web development and design.",
   icons: {
-    icon: "/favicon.svg",
+    icon: "/favicon.ico",
   },
 };
 
