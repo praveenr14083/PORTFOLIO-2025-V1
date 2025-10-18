@@ -5,6 +5,22 @@ import { EXPERIENCE } from "../data/educationExperience";
 
 const projects = [
   {
+    title: "Contact Form MERN",
+    description:
+      "A full-stack contact form built with React, Node.js, Express, MongoDB, and React Hook Form. It sends emails using Resend and stores submissions in MongoDB.",
+    image: "/assets/projects/contact-form-mern.png",
+    tags: [
+      "React",
+      "Node JS",
+      "Express JS",
+      "MongoDB",
+      "React Hook Form",
+      "Resend",
+    ],
+    demoUrl: "https://contact-from-mern.netlify.app/",
+    githubUrl: "https://github.com/praveenr14083/contact-form-mern",
+  },
+  {
     title: "JAS DigicraftTek Portfolio",
     description:
       "A modern and responsive portfolio website designed to showcase digital services, past projects, and creative expertise. Built with Next.js, Tailwind CSS, and Shadcn UI, it features smooth navigation, an interactive UI, and a visually appealing layout optimized for all devices.",
