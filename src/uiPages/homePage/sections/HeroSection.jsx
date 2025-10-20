@@ -34,7 +34,7 @@ export function HeroSection() {
           {/* Text content */}
           <div className="w-full flex flex-col justify-center gap-3 md:gap-6 order-2 md:order-1 z-6">
             <h1 className="text-xl md:text-2xl text-center md:text-start">
-              Hi, I am
+              Hi!, I am
             </h1>
 
             <h1 className="text-3xl md:text-5xl text-center md:text-start  font-bold">
