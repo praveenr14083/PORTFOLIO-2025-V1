@@ -1,4 +1,4 @@
-import HomePage from "@/uiPages/homePage/HomePage";
+import HomePage from "@/uiPages/homePage/page/HomePage";
 
 export default function HomePageRoute() {
   return (

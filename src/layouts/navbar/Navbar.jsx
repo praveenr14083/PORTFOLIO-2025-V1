@@ -8,7 +8,7 @@ import { NAV_ITEMS } from "@/utils/constants/navItems";
 import { PERSONAL_DATA } from "@/utils/constants/personalData";
 import { InteractiveHoverButton } from "@/components/magicui/interactive-hover-button";
 import { MobileMenu } from "./sections/MobileMenu";
-import { Sun, Moon, Menu, X, Webhook } from "lucide-react";
+import { Sun, Moon, Menu, X, Webhook, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export function Navbar() {
@@ -24,10 +24,10 @@ export function Navbar() {
     // Main Section
     <nav
       id="navbar"
-      className="sticky top-0 z-25 w-full bg-background border-t border-b border-border border-dashed"
+      className="sticky top-0 z-25 w-full bg-background border-b border-border border-dashed"
     >
       {/* Container Section */}
-      <div className="section-px py-3">
+      <div className="section-px py-3 md:py-4">
         <section className="flex items-center justify-between">
           {/* Logo & Name */}
           <ScrollLink to="hero" smooth={true} offset={-60} spy={true}>
@@ -61,20 +61,20 @@ export function Navbar() {
             </div>
 
             {/* Download Resume Button */}
-
-            <InteractiveHoverButton
-              className="hidden md:block"
+            <Button
               onClick={handlePreviewClick}
+              className="group hidden md:flex gap-2 bg-c-primary hover:bg-white hover:text-black px-4 py-2 rounded-full font-semibold text-white"
             >
+              <Download />
               Resume
-            </InteractiveHoverButton>
+            </Button>
 
             {/* Theme Toggle */}
             <Button
               size="icon"
               aria-label="Toggle theme"
               onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-              className="size-10 bg-[810CA8]transparent text-black dark:text-white hover:bg-[810CA8]transparent rounded-full border border-border"
+              className="size-10 bg-background hover:bg-background text-black dark:text-white rounded-full border border-border"
             >
               {theme === "dark" ? <Sun /> : <Moon />}
             </Button>

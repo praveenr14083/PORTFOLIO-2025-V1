@@ -7,7 +7,6 @@ import { GridPattern } from "@/components/magicui/grid-pattern";
 import { Link } from "react-scroll";
 import { SocialMedia } from "../components/SocialMedia";
 import { BriefcaseBusiness } from "lucide-react";
-import "./styles/HeroSection.css";
 
 export function HeroSection() {
   return (
@@ -29,7 +28,7 @@ export function HeroSection() {
       </div>
 
       {/* Container Section */}
-      <div className="section-px pb-20 py-8 sm:py-10 md:py-12 lg:py-14 md:h-[calc(100dvh-66px)]">
+      <div className="section-px pb-20 py-8 sm:py-10 md:py-12 lg:py-14 md:h-[calc(100dvh-73px)] flex justify-center items-center">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-y-10">
           {/* Text content */}
           <div className="w-full flex flex-col justify-center gap-3 md:gap-6 order-2 md:order-1 z-6">
